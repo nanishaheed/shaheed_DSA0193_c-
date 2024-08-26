@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int squares(int n){
+	int sum=0;
+	while(n>0){
+		int rem=n%10;
+		sum=sum+(rem*rem);
+		n=n/10;
+	}
+	return sum;
+}
+int main(){
+	int n;
+	cout<<"enter the number:";
+	cin>>n;
+	int result=n;
+	while(result!=1 && result!=4){
+		result=squares(result);
+	}
+	if(result==1){
+		cout<<"happy number";
+	}
+	else {
+		cout<<"not a happy number";
+	}
+	return 0;
+}

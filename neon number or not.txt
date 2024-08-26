@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"enter the number";
+	cin>>n;
+	int square;
+	square=n*n;
+	int sum=0;
+	while(square!=0){
+		int rem=square%10;
+		sum=sum+rem;
+		square=square/10;
+		
+	}
+	if(sum==n){
+		cout<<"neon number";
+	}
+	else{
+		cout<<"not a neon number";
+	}
+	return 0;
+}

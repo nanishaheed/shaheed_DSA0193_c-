@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int n,sum=0,rem;
+	cout<<"enter the number:";
+	cin>>n;
+	while(n>0){
+		rem=n%10;
+		sum=sum+(rem*rem*rem*rem);
+		n=n/10;
+	}
+	if(sum==n){
+		cout<<"narcissistic number";
+	}
+	else{
+		cout<<"not a narcissistic number";
+	}
+	return 0;
+}

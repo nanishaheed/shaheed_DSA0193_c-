@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int n1,n2;
+	cout<<"enter the two numbers:";
+	cin>>n1>>n2;
+	do{
+		if(n1>n2){
+			n1=n1-n2;
+		}
+		else{
+			n2=n2-n1;
+		}
+		}while(n1!=n2);
+	cout<<"gcd of two numbers is:"<<n1;
+}

@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int i,j;
+	int a[3][3];
+	int n=3;
+	int sum_left=0,sum_right=0;
+	cout<<"enter the matrix elements:";
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			cin>>a[i][j];
+		
+	
+	if(i==j)
+	   sum_left+=a[i][j];
+	if((i+j)==n-1)
+	   sum_right+=a[i][j];
+}
+}
+	   
+	cout<<"the sum of left diagonal eleemnts in a matrix is:"<<sum_left<<"\n";
+	cout<<"the sum of right diagonal eleemnts in a matrix is:"<<sum_right;
+	return 0;
+	
+}
